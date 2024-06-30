@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* heading */
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+/* secondary */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
