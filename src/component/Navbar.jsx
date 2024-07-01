@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { LuPhoneCall } from "react-icons/lu";
-
+import logo from "/logo.png"
 
 const Navbar = () => {
   const navItems =(
@@ -9,7 +9,7 @@ const Navbar = () => {
     <li>
       <details>
         <summary className="lg:hover:text-black ">Menu</summary>
-        <ul className="p-2">
+        <ul className="p-2 bg-white">
         <li className="lg:hover:text-black "><Link to="/#">All</Link></li>
         <li className="lg:hover:text-black "><Link to="/#">Salad</Link></li>
         <li className="lg:hover:text-black "><Link to="/#">Pizza</Link></li>
@@ -20,7 +20,7 @@ const Navbar = () => {
     <li>
       <details>
         <summary className="lg:hover:text-black ">Survices</summary>
-        <ul className="p-2">
+        <ul className="p-2  bg-white">
         <li className="lg:hover:text-black "><Link to="/#">Online Order</Link></li>
         <li className="lg:hover:text-black "><Link to="/#">Table Booking</Link></li>
         <li className="lg:hover:text-black "><Link to="/#">Order Tracking</Link></li>
@@ -31,9 +31,12 @@ const Navbar = () => {
     <li className="lg:hover:text-black "><Link to="/">Cart</Link></li>
     </>
   )
+
+
+
   return (
-    <header className="max-w-screen-2xl container mx-auto">
-        <div className="navbar bg-yellow xl:px-24">
+    <header className="max-w-screen-2xl  container  mx-auto">
+        <div className="navbar  xl:px-24">
     <div className="navbar-start">
       <div className="dropdown">
         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-black">
@@ -56,7 +59,9 @@ const Navbar = () => {
           {navItems}
         </ul>
       </div>
-      <a href="#" className="text-xl text-red font-bold">LOGO</a>
+      <a href="#" className="text-xl text-red font-bold">
+        <img src={logo} alt="" />
+      </a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1 text-red">
