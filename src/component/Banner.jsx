@@ -2,7 +2,7 @@ import banner from "/banner.png";
 
 const Banner = () => {
   return (
-    <div className="sitesize bg-slate-50 h-screen">
+    <div className="sitesize bg-slate-50 ">
       <div className=" flex flex-col-reverse mt-10  md:flex-row justify-between items-center gap-8 ">
         {/* caption */}
         <div className="md:w-1/2 py-8 md:py-24 space-y-7">
@@ -16,7 +16,7 @@ const Banner = () => {
             unforgettable culinary experience. Satisfy your cravings and savor
             every bite with Foodie Frenzy, where every meal is a celebration.
           </p>
-          <button className="btn bg-red text-yellow rounded-full hover:text-white flex items-center mt-8">
+          <button className="btn bg-red text-yellow rounded-full hover:text-white flex items-center mt-8 ">
             Order now
           </button>
         </div>
