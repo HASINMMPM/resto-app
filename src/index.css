@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 /* heading */
-@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montaga&display=swap");
 /* secondary */
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif+Caption:ital@0;1&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+
+.sitesize {
+  @apply max-w-screen-2xl container mx-auto px-4 xl:px-24;
+}
+
+.sub-title {
+  @apply font-subtitle uppercase font-light text-red text-lg text-center py-4;
+}
+
+.title {
+  @apply capitalize font-heading text-black text-center py-4 font-semibold text-lg md:text-4xl;
+}
