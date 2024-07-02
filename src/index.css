@@ -20,3 +20,8 @@
 .title {
   @apply capitalize font-heading text-black text-center py-4 font-semibold text-lg md:text-4xl;
 }
+
+
+.bgshaper{
+  border-radius: 40% 20% 40% 20%  ;
+}
