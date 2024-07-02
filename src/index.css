@@ -14,7 +14,7 @@
 }
 
 .sub-title {
-  @apply font-subtitle uppercase font-light text-red text-lg text-center py-4;
+  @apply font-subtitle uppercase font-light text-red text-md text-center py-4;
 }
 
 .title {

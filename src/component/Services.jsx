@@ -26,21 +26,23 @@ const Services = () => {
     {
       id: 3,
       title: "Special Dietary Options",
-      description: "Vegetarian, vegan, gluten-free, and low-carb options available to accommodate all dietary preferences.",
+      description:
+        "Vegetarian, vegan, gluten-free, and low-carb options available to accommodate all dietary preferences.",
       img: "/images/service/diet.png",
     },
   ];
   return (
     <section className="sitesize flex flex-col items-center justify-center ">
-      
-        <h5 className="title">
-          Discover Our Offerings
-        </h5>
-        <p className="text-xl font-secondary w-1/2 text-center py-4 text-gray-500">Delve into the joy of delicious dining with Foodie Frenzy. Whether you're enjoying a meal with ordering online, we provide an exceptional culinary experience with a diverse menu to satisfy every palate.</p>
-      
+      <h5 className="title">Discover Our Offerings</h5>
+      <p className="text=lg md:text-xl font-secondary w-3/4 md:w-1/2 text-center py-4 text-gray-500">
+        Delve into the joy of delicious dining with Foodie Frenzy. Whether
+        you're enjoying a meal with ordering online, we provide an exceptional
+        culinary experience with a diverse menu to satisfy every palate.
+      </p>
+
       {/* right */}
       <div className=" grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-8 p-14">
-      {services.map((survice, index) => {
+        {services.map((survice, index) => {
           return (
             <div
               key={index}
@@ -52,8 +54,12 @@ const Services = () => {
                 className="bg-yellow h-40 w-40 p-px rounded-full"
               />
               <div className="flex flex-col gap-4">
-                <h4 className="text-2xl text-black font-heading mt-3">{survice.title}</h4>
-                <p className="text-gray-500 text-lg font-secondary md:w-3/4   ">{survice.description}</p>
+                <h4 className="text-2xl text-black font-heading mt-3">
+                  {survice.title}
+                </h4>
+                <p className="text-gray-500 text-lg font-secondary md:w-3/4   ">
+                  {survice.description}
+                </p>
               </div>
             </div>
           );
