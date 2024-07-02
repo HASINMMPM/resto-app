@@ -1,34 +1,34 @@
 import { Link } from "react-router-dom"
 import { LuPhoneCall } from "react-icons/lu";
-import logo from "/logo.png"
+import logo from "/images/logo.png"
 
 const Navbar = () => {
   const navItems =(
     <>
-    <li className="lg:hover:text-black "><Link to="/">Home</Link></li>
+    <li className="text-red hover:text-black "><Link to="/">Home</Link></li>
     <li>
       <details>
-        <summary className="lg:hover:text-black ">Menu</summary>
+        <summary className="text-red hover:text-black ">Menu</summary>
         <ul className="p-2 bg-white">
-        <li className="lg:hover:text-black "><Link to="/#">All</Link></li>
-        <li className="lg:hover:text-black "><Link to="/#">Salad</Link></li>
-        <li className="lg:hover:text-black "><Link to="/#">Pizza</Link></li>
+        <li className="text-red hover:text-black "><Link to="/#">All</Link></li>
+        <li className="text-red hover:text-black "><Link to="/#">Salad</Link></li>
+        <li className="text-red hover:text-black "><Link to="/#">Pizza</Link></li>
         </ul>
       </details>
     </li>
     {/* survises*/}
     <li>
       <details>
-        <summary className="lg:hover:text-black ">Survices</summary>
+        <summary className="text-red hover:text-black ">Survices</summary>
         <ul className="p-2  bg-white">
-        <li className="lg:hover:text-black "><Link to="/#">Online Order</Link></li>
-        <li className="lg:hover:text-black "><Link to="/#">Table Booking</Link></li>
-        <li className="lg:hover:text-black "><Link to="/#">Order Tracking</Link></li>
+        <li className="text-red hover:text-black "><Link to="/#">Online Order</Link></li>
+        <li className="text-red hover:text-black "><Link to="/#">Table Booking</Link></li>
+        <li className="text-red hover:text-black "><Link to="/#">Order Tracking</Link></li>
         </ul>
       </details>
     </li>
-    <li className="lg:hover:text-black "><a>Offers</a></li>
-    <li className="lg:hover:text-black "><Link to="/">Cart</Link></li>
+    <li className="text-red hover:text-black "><a>Offers</a></li>
+    <li className="text-red hover:text-black block md:hidden "><Link to="/">Cart</Link></li>
     </>
   )
 
@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="navbar  xl:px-24">
     <div className="navbar-start">
       <div className="dropdown">
-        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-black">
+        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden text-red">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-5 w-5"
@@ -55,7 +55,7 @@ const Navbar = () => {
         </div>
         <ul
           tabIndex={0}
-          className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          className="menu menu-sm dropdown-content bg-white  rounded-box z-[1] mt-3 w-52 p-2 shadow">
           {navItems}
         </ul>
       </div>
