@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Banner from '../component/Banner'
 import Catagories from '../component/Catagories'
 import Specialdish from '../component/Specialdish'
