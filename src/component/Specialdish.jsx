@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
 import Card from "./Card";
-import { BiColor } from "react-icons/bi";
+// import { BiColor } from "react-icons/bi";
 
 
 const Specialdish = () => {
@@ -22,14 +22,14 @@ const Specialdish = () => {
 
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true, // make the slider infinite for better UX
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1224,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -38,7 +38,7 @@ const Specialdish = () => {
         },
       },
       {
-        breakpoint: 900,
+        breakpoint: 1100,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -46,14 +46,16 @@ const Specialdish = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true, // keep dots for navigation
         },
       },
     ],
   };
+  
   return (
     <div className="sitesize py-20 bg-white ">
   <p className="sub-title">Special dishes</p>
