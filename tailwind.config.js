@@ -8,11 +8,12 @@ export default {
     extend: {
       colors :{
         'yellow' :'#fdcf03',
-        'red' :'#c60000',
+        'red' :'#d31e3d',
       },
       fontFamily:{
         'heading':[ "Montaga", 'serif'],
-        'secondary':["PT Serif Caption", 'serif']
+        'secondary':["PT Serif Caption", 'serif'],
+        'subtitle' :["Quicksand", 'sans-serif']
 
       }
     },
